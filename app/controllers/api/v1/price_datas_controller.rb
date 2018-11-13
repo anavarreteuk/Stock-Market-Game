@@ -1,4 +1,4 @@
-class PriceDatasController < ApplicationController
+class Api::V1::PriceDatasController < ApplicationController
     def index
         @price_datas = PriceData.all
         render json: @price_datas

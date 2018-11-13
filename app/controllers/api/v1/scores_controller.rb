@@ -34,7 +34,7 @@ def index
     private
 
     def score_params
-        params.require(:score).permit(:symbol, :bid, :ask, :price)
+        params.require(:score).permit(:username, :score)
     end
 
 end

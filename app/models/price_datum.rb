@@ -1,2 +1,0 @@
-class PriceDatum < ApplicationRecord
-end

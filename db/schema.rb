@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2018_11_13_095002) do
 
-  create_table "price_data", force: :cascade do |t|
+  create_table "price_datas", force: :cascade do |t|
     t.string "symbol"
     t.float "bid"
     t.float "ask"
@@ -21,19 +21,9 @@ ActiveRecord::Schema.define(version: 2018_11_13_095002) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "transactions", force: :cascade do |t|
-    t.integer "user_id"
-    t.string "symbol"
-    t.float "buy_price"
-    t.float "sell_price"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_transactions_on_user_id"
-  end
-
-  create_table "users", force: :cascade do |t|
+  create_table "scores", force: :cascade do |t|
     t.string "username"
-    t.float "total"
+    t.float "score"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

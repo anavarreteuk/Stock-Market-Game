@@ -14,3 +14,9 @@
 # ActiveSupport::Inflector.inflections(:en) do |inflect|
 #   inflect.acronym 'RESTful'
 # end
+
+ActiveSupport::Inflector.inflections do |inflect|
+
+   inflect.irregular 'price_data', 'price_datas' # or whatever you want your plural to be
+
+ end

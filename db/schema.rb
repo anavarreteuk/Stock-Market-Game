@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2018_11_13_095002) do
 
   create_table "scores", force: :cascade do |t|
     t.string "username"
-    t.float "score"
+    t.float "point"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

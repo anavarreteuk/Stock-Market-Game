@@ -34,7 +34,7 @@ def index
     private
 
     def score_params
-        params.require(:score).permit(:username, :score)
+        params.require(:score).permit(:username, :point)
     end
 
 end

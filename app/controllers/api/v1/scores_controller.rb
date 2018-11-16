@@ -1,7 +1,7 @@
 class Api::V1::ScoresController < ApplicationController
 
 def index
-        @scores = Score.all
+        @scores = Score.order(point: :desc).limit(10)
         render json: @scores
     end
 
